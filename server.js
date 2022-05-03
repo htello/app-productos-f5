@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 
-const usertHandlers = users({ axios });
+const usertHandlers = products({ axios });
 
 app.get("/", usertHandlers.get);
 
